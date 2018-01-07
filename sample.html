@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Tab</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .clearfix::after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+        .tab-container {
+            width: 300px;
+            margin: 30px auto;
+
+        }
+
+        .tab {
+            float: left;
+            padding: 5px 32px;
+            border-top: 1px solid #ccc;
+            border-left: 1px solid #ccc;
+            background: #ddd;
+            cursor: pointer;
+        }
+
+        .panel > .tab:last-child {
+            border-right: 1px solid #ccc;
+        }
+
+        .tab-container > .main > .test {
+            border: 1px solid #ccc;
+            width: 300px;
+            height: 168px;
+            display: none;
+            background: #fff;
+            text-align: center;
+            line-height: 150px;
+        }
+
+        .tab-container > .main > .active {
+            display: block;
+        }
+
+        .tab-container > .panel > .active {
+            background: #fff;
+        }
+    </style>
+</head>
+<body>
+<div class="tab-container">
+    <div class="panel clearfix">
+        <div class="tab active">1</div>
+        <div class="tab">2</div>
+        <div class="tab">3</div>
+        <div class="tab">4</div>
+    </div>
+    <div class="main">
+        <div class="test active">Tab1</div>
+        <div class="test">Tab2</div>
+        <div class="test">Tab3</div>
+        <div class="test">Tab4</div>
+    </div>
+</div>
+<div class="tab-container">
+    <div class="panel clearfix">
+        <div class="tab active">1</div>
+        <div class="tab">2</div>
+        <div class="tab">3</div>
+        <div class="tab">4</div>
+    </div>
+    <div class="main">
+        <div class="test active">Tab1</div>
+        <div class="test">Tab2</div>
+        <div class="test">Tab3</div>
+        <div class="test">Tab4</div>
+    </div>
+</div>
+<script src="/tab.js"></script>
+</body>
+</html>
