@@ -1,1 +1,5 @@
-# js-component-tab
+## 组件功能
+- 点击对应元素显示对应内容
+
+## 组件实现方式
+构造函数Tab，在Tab的prototype内
